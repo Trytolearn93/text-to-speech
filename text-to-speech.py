@@ -1,11 +1,12 @@
 from google.cloud import texttospeech
+import my_sheet
 
 
 def text_to_speech(
     text,
     output_filename,
     language_code="en-US",
-    voice_name="en-US-Wavenet-D",
+    voice_name="en-US-Wavenet-J",
     audio_format=texttospeech.AudioEncoding.MP3,
 ):
     # Initialize client
@@ -38,7 +39,7 @@ if __name__ == "__main__":
 
     # Set your Google Cloud credentials
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = (
-        "path/to/your/service-account-key.json"
+        "./google-account-key.json"
     )
 
     # Input text and output file

@@ -1,0 +1,4 @@
+google-cloud-texttospeech
+gspread
+google-auth
+oauth2client
